@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cosl0i8fvxc76"]
+
+[ext_resource type="Texture2D" uid="uid://nvkqje30ajr" path="res://regina-george-hq-render-woman-posing-for-thumbnail.jpg" id="1_f50pn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fjfrr"]
+size = Vector2(46.000015, 78.00003)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1437017392]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1144190919]
+position = Vector2(0, 2.25)
+scale = Vector2(0.15333338, 0.11056337)
+texture = ExtResource("1_f50pn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715198796]
+position = Vector2(0, 2.25)
+shape = SubResource("RectangleShape2D_fjfrr")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=956722899]
+zoom = Vector2(1.5, 1.5)
